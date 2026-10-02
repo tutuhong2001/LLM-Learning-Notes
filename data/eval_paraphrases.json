@@ -1,0 +1,10 @@
+[
+  {"query": "公司的手册每天都在改，如何让机器人知道最新规定？", "relevant_ids": ["rag"]},
+  {"query": "问题换了说法，没有出现原文关键词，还能找到相关内容吗？", "relevant_ids": ["embeddings", "bm25"]},
+  {"query": "把整本书一次塞进编码器会有什么问题？", "relevant_ids": ["chunking"]},
+  {"query": "我换了把文字变成数字的编码器，历史索引还能直接用吗？", "relevant_ids": ["vector_index"]},
+  {"query": "机器人说得头头是道还标了出处，我能直接相信吗？", "relevant_ids": ["prompting", "evaluation"]},
+  {"query": "如何让模型学会固定输出格式，同时少训练一些权重？", "relevant_ids": ["finetuning"]},
+  {"query": "排第一就找到正确资料与排第三才找到，该怎么量化差别？", "relevant_ids": ["evaluation"]},
+  {"query": "有人在知识库里写了让助手改听他的话，应该如何处理？", "relevant_ids": ["prompting"]}
+]

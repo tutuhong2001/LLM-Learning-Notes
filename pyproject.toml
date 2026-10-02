@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-learning-notes"
+version = "0.1.0"
+description = "A small, reproducible Chinese RAG learning project with retrieval evaluation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+llm = ["openai>=1.50,<3"]
+semantic = ["sentence-transformers>=3,<6"]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+ai-notes = "ai_toolkit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ai_toolkit*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

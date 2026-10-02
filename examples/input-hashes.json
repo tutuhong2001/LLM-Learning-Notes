@@ -1,0 +1,14 @@
+{
+  "data/knowledge/api.md": "1c272e6e3197e5b3591ec8f636d77cd4e4b7599de5ffdfc9e97c785305e3e6ce",
+  "data/knowledge/bm25.md": "a07eb16dad80efbad893bc6c4b9444604ad741137b98e3ca718fb5951dfcde89",
+  "data/knowledge/chunking.md": "2ccc22a06b3e7570eed06e5482e3c8b75d70d26fff92e584de21ff5fa3687fa7",
+  "data/knowledge/embeddings.md": "32665a9a0dad72ae2a261b2663487cdf295c67bc793a4ad56ee9a18f4f7d4006",
+  "data/knowledge/evaluation.md": "9536508005b7adcc4af6e498f8965961869a56b75aae3dfb342c69c8a9899847",
+  "data/knowledge/finetuning.md": "4ce6bf002b17a3c8dc1d0f88fed9e6447c279948d0ef545d74c3e7a60709fc1b",
+  "data/knowledge/inference.md": "70d0ea11c6aa11d78dd5248363865da86561360b2116846c1c97c538c36c9e85",
+  "data/knowledge/prompting.md": "164735a7f42a165634e9ed5163e673118cdf65eab83c700e21ec6293b7fe7fa8",
+  "data/knowledge/rag.md": "59d4d6562bf3affa5cb52ce3e0639efc86eac895351823dddc4d19c288bc08d0",
+  "data/knowledge/vector_index.md": "3b34e43beb74f99188f36986fd8d8df8377c77b51fb9b12711bd3bab4ce1641a",
+  "data/eval_paraphrases.json": "fec4e35d26a2e6d6d974d65359e92c1b63544466a166259882320f35219288a1",
+  "data/eval_questions.json": "885e2f0966dd7f17815d8ae79f97cac8a616d4f8ebd79092551be478531c1e86"
+}

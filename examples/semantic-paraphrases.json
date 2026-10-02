@@ -1,0 +1,127 @@
+{
+  "top_k": 3,
+  "num_queries": 8,
+  "metrics": {
+    "hit_rate@3": 0.75,
+    "recall@3": 0.6875,
+    "mrr@3": 0.5416666666666666
+  },
+  "details": [
+    {
+      "query": "公司的手册每天都在改，如何让机器人知道最新规定？",
+      "relevant_ids": [
+        "rag"
+      ],
+      "retrieved_ids": [
+        "rag",
+        "inference",
+        "chunking"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "问题换了说法，没有出现原文关键词，还能找到相关内容吗？",
+      "relevant_ids": [
+        "bm25",
+        "embeddings"
+      ],
+      "retrieved_ids": [
+        "prompting",
+        "embeddings",
+        "bm25"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "query": "把整本书一次塞进编码器会有什么问题？",
+      "relevant_ids": [
+        "chunking"
+      ],
+      "retrieved_ids": [
+        "chunking",
+        "embeddings",
+        "evaluation"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "我换了把文字变成数字的编码器，历史索引还能直接用吗？",
+      "relevant_ids": [
+        "vector_index"
+      ],
+      "retrieved_ids": [
+        "vector_index",
+        "chunking",
+        "prompting"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query": "机器人说得头头是道还标了出处，我能直接相信吗？",
+      "relevant_ids": [
+        "evaluation",
+        "prompting"
+      ],
+      "retrieved_ids": [
+        "embeddings",
+        "prompting",
+        "rag"
+      ],
+      "hit": 1,
+      "recall": 0.5,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "query": "如何让模型学会固定输出格式，同时少训练一些权重？",
+      "relevant_ids": [
+        "finetuning"
+      ],
+      "retrieved_ids": [
+        "inference",
+        "rag",
+        "embeddings"
+      ],
+      "hit": 0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "query": "排第一就找到正确资料与排第三才找到，该怎么量化差别？",
+      "relevant_ids": [
+        "evaluation"
+      ],
+      "retrieved_ids": [
+        "rag",
+        "vector_index",
+        "embeddings"
+      ],
+      "hit": 0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "query": "有人在知识库里写了让助手改听他的话，应该如何处理？",
+      "relevant_ids": [
+        "prompting"
+      ],
+      "retrieved_ids": [
+        "rag",
+        "inference",
+        "prompting"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333
+    }
+  ],
+  "backend": "semantic",
+  "embedding_model": "BAAI/bge-small-zh-v1.5"
+}

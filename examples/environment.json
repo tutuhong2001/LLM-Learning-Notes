@@ -1,0 +1,21 @@
+{
+  "python": "3.11.4",
+  "platform": "Windows",
+  "packages": {
+    "pytest": "9.1.1",
+    "openai": "1.66.3",
+    "sentence-transformers": "5.7.0",
+    "transformers": "5.18.0",
+    "torch": "2.7.0",
+    "numpy": "2.2.3",
+    "huggingface-hub": "1.33.0"
+  },
+  "verified_backends": [
+    "bm25",
+    "semantic"
+  ],
+  "embedding_model": "BAAI/bge-small-zh-v1.5",
+  "device": "cpu",
+  "verification_date": "2026-10-03",
+  "external_generation_verified": false
+}

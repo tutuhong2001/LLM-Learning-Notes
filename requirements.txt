@@ -1,0 +1,2 @@
+# API generation support. For neural embeddings: pip install -e ".[semantic]"
+-e .[llm]
