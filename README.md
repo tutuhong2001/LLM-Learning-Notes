@@ -1,5 +1,7 @@
 # LLM-Learning-Notes
 
+[![Tests](https://github.com/tutuhong2001/LLM-Learning-Notes/actions/workflows/ci.yml/badge.svg)](https://github.com/tutuhong2001/LLM-Learning-Notes/actions/workflows/ci.yml)
+
 **中文 AI 学习笔记检索与 RAG Demo：可运行代码 + 检索评估 + 技术分享。**
 
 把 10 篇 AI 学习笔记变成一个小型问答知识库：先找资料，再使用 OpenAI 兼容服务生成带来源的回答。项目保留无需模型下载的 BM25 基线，也支持 Sentence-Transformers 中文语义检索，适合快速演示和面试讲解。
@@ -37,6 +39,8 @@ flowchart LR
 需要 Python 3.10+。在**仓库根目录**运行，不需要 GPU、API Key 或第三方 Python 包：
 
 ```bash
+git clone https://github.com/tutuhong2001/LLM-Learning-Notes.git
+cd LLM-Learning-Notes
 python -m ai_toolkit search "LoRA 为什么能减少训练参数？" --top-k 2
 python -m ai_toolkit ask "RAG 与微调有什么区别？" --dry-run
 python -m ai_toolkit evaluate --output outputs/bm25-eval.json
@@ -165,16 +169,14 @@ LLM-Learning-Notes/
 - API 错误：检查服务地址、模型 ID、凭证与额度。CLI 不打印原始服务错误详情，以免泄露请求内容。
 - `score` 是排序分数；不同后端的原始分数不能直接比较。
 
-## 发布到 GitHub
+## GitHub 仓库与后续更新
 
-在 GitHub 创建名为 `LLM-Learning-Notes` 的空仓库（不要另外初始化 README），然后在本项目根目录运行。若本地已有初始提交，从 `git remote add` 开始：
+项目地址：[tutuhong2001/LLM-Learning-Notes](https://github.com/tutuhong2001/LLM-Learning-Notes)。克隆并修改项目后，仓库维护者可以提交更新：
 
 ```bash
-git init -b main
 git add .
-git commit -m "feat: add Chinese notes retrieval and RAG demo"
-git remote add origin https://github.com/YOUR_USERNAME/LLM-Learning-Notes.git
-git push -u origin main
+git commit -m "docs: update learning notes"
+git push origin main
 ```
 
 建议仓库描述：`中文 AI 学习笔记与最小 RAG：Sentence-Transformers、BM25、OpenAI 兼容接口及检索评估。`
