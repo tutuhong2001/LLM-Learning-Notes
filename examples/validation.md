@@ -13,7 +13,9 @@
 | 基础与改写题集评估 | 两个后端均已实际运行 | 下表的逐题 JSON |
 | OpenAI SDK 请求与响应 | 真实 SDK + 模拟 HTTP 测试通过 | `tests/test_sdk_transport.py` |
 | 真实服务生成 | 未验证，未提供服务凭证 | 配置自己的 API 后运行 `ask` |
-| GitHub Actions | 已提供配置，未在远端运行 | `.github/workflows/ci.yml` |
+| GitHub Actions | Windows / Linux × Python 3.10 / 3.12 四种组合全部通过 | [首次发布 CI](https://github.com/tutuhong2001/LLM-Learning-Notes/actions/runs/37035326569) |
+
+发布补充：公开仓库为 [tutuhong2001/LLM-Learning-Notes](https://github.com/tutuhong2001/LLM-Learning-Notes)。上述首次发布 CI 验证的提交为 `e3d850d`；此后补充验证记录的提交仅修改文档。
 
 ## 实测结果
 

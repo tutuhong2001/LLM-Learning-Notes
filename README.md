@@ -113,7 +113,7 @@ python -m pytest -q
 
 安装后的 `ai-notes` 命令与 `python -m ai_toolkit` 等价。所有命令可使用 `--help` 查看参数。默认读取当前目录下的 `data/knowledge`；从其他位置运行时，用 `--docs` 和 `--dataset` 指定实际路径。
 
-本地实测结果与环境见 [交付验证记录](examples/validation.md)，逐题结果保留在 `examples/`。GitHub Actions 配置会在推送后运行无模型下载的测试；本地通过不代表远端 CI 已运行。
+本地实测结果与环境见 [交付验证记录](examples/validation.md)，逐题结果保留在 `examples/`。[首次发布的 GitHub Actions](https://github.com/tutuhong2001/LLM-Learning-Notes/actions/runs/37035326569) 已在 Windows / Linux、Python 3.10 / 3.12 四种组合下通过测试与 BM25 评估；CI 不下载语义模型，也不调用真实生成服务。
 
 本地实测（2026-10-03，CPU，top-k=3）：
 
